@@ -75,6 +75,8 @@ li{
     }
 
     header{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
     body{
         margin:0 15vw;
