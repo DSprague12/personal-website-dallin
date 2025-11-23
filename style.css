@@ -60,10 +60,17 @@ li{
         width:100%;
     }
 
-    header{
+    #headBar{
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     }
+    
+    #headBar ul{
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+    }
+    
     body{
         width:100%;
         margin:auto;
@@ -75,10 +82,16 @@ li{
         font-size: 1.5rem;
     }
 
-    header{
+    #headBar{
         display:grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
+    
+    #headBar ul{
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    
     body{
         margin:0 15vw;
     }
